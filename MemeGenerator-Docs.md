@@ -58,6 +58,7 @@ Ensure you have the following installed:
 
 ## How to Run the Application
 - The main entry point of the application is `index.js`, which renders the `App.js` component.
+- Open New Terminal 
 - Start the application using `npm run dev`.
 
 ## Features
