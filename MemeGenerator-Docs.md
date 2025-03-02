@@ -43,7 +43,7 @@ Ensure you have the following installed:
 │-- /src
 │   │-- /components        # Reusable UI components
 │   │-- /images            # Image and static assets
-│   │-- /styles            # CSS styles
+│   │-- index.css          # CSS styles
 │   │-- App.js             # Main application entry point
 │   │-- index.js           # Renders App component
 │-- package.json           # Project dependencies and scripts
