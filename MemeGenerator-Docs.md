@@ -44,8 +44,8 @@ Ensure you have the following installed:
 │   │-- /components        # Reusable UI components
 │   │-- /images            # Image and static assets
 │   │-- index.css          # CSS styles
-│   │-- App.js             # Main application entry point
-│   │-- index.js           # Renders App component
+│   │-- App.jsx            # Main application entry point
+│   │-- main.jsx           # Renders App component
 │-- package.json           # Project dependencies and scripts
 │-- README.md              # Project Objective
 │-- MemeGenerator-Docs.md  # Project documentation
