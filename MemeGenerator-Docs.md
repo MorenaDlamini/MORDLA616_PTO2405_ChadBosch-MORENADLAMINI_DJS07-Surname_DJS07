@@ -54,7 +54,7 @@ Ensure you have the following installed:
 ## Approach to the Application
 - The application fetches meme images from an API or local storage.
 - Users can add top and bottom text overlays to the selected meme.
-- The final meme can be downloaded or shared.
+- Application to work with full window and minimized window
 
 ## How to Run the Application
 - The main entry point of the application is `index.js`, which renders the `App.js` component.
