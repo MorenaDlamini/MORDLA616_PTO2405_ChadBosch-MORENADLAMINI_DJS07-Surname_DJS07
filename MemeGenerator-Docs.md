@@ -42,12 +42,13 @@ Ensure you have the following installed:
 /meme-generator
 │-- /src
 │   │-- /components    # Reusable UI components
-│   │-- /assets        # Image and static assets
+│   │-- /images        # Image and static assets
 │   │-- /styles        # CSS styles
 │   │-- App.js         # Main application entry point
 │   │-- index.js       # Renders App component
 │-- package.json       # Project dependencies and scripts
-│-- README.md          # Project documentation
+│-- README.md          # Project Objective
+│-- MemeGenerator-Docs.md  # Project documentation
 ```
 
 ## Approach to the Application
