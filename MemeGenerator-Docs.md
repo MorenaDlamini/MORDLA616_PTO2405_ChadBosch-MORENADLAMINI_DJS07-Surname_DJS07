@@ -64,7 +64,6 @@ Ensure you have the following installed:
 ## Features
 - Select a meme template.
 - Add and customize text overlays.
-- Download the generated meme.
 
 ## Technologies Used
 - React.js
