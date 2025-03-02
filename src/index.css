@@ -1,80 +1,107 @@
+/* ============================= */
+/* Global Styles */
+/* ============================= */
+
+/* Apply box-sizing to all elements for more predictable layout calculations */
 * {
   box-sizing: border-box;
 }
 
+/* Set a clean, readable font and remove default margin */
 body {
   font-family: "Karla", sans-serif;
   margin: 0;
+  background-color: #f4f4f4;
+  /* Light gray background to reduce eye strain */
 }
 
+/* Add padding around the main content */
 main {
   padding: 36px;
 }
 
+/* ============================= */
+/* Header Styles */
+/* ============================= */
+
+/* Header container: flexbox for alignment */
 .header {
   display: flex;
   align-items: center;
+  /* Centers items vertically */
+  justify-content: space-between;
+  /* Spreads elements out horizontally */
   height: 65px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   color: white;
   padding: 20px;
 }
 
+/* Logo Image Styling */
 .header--image {
-  height: 100%;
-  margin-right: 6px;
+  height: 50px;
+  margin-right: 10px;
 }
 
+/* Main title styling */
 .header--title {
   font-size: 1.25rem;
-  margin-right: auto;
+  font-weight: bold;
 }
 
+/* Project name text on the right */
 .header--project {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
-.form {
-  display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
-  gap: 17px;
-  margin-bottom: 17px;
-}
+/* ============================= */
+/* Meme Section */
+/* ============================= */
 
-.form--input {
-  font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  border: 1px solid #D5D4D8;
-  text-indent: 5px;
-}
-
-.form--button {
-  grid-column: 1 / -1;
-  font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
+/* Meme container: Ensures text overlays the image properly */
 .meme {
   position: relative;
+  /* Makes text absolute positioning relative to this container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centers image horizontally */
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
 }
 
+/* Meme image styling */
 .meme--image {
-  max-width: 100%;
+  max-width: 80%;
+  /* Prevents image from exceeding parent width */
+  height: auto;
   border-radius: 3px;
 }
 
+/* Adjust meme image size on larger screens for better layout */
+@media (min-width: 1024px) {
+  .meme--image {
+    max-width: 50%;
+  }
+}
+
+/* ============================= */
+/* Meme Text Positioning */
+/* ============================= */
+
+/* Styling for meme text (both top and bottom) */
 .meme--text {
   position: absolute;
+  /* Allows text to overlay on the meme image */
   width: 80%;
+  /* Ensures text width adapts to image size */
   text-align: center;
   left: 50%;
+  /* Centers text horizontally */
   transform: translateX(-50%);
-  margin: 15px 0;
+  /* Adjusts text alignment */
   padding: 0 5px;
   font-family: impact, sans-serif;
   font-size: 2em;
@@ -82,21 +109,62 @@ main {
   color: white;
   letter-spacing: 1px;
   text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
 }
 
-.bottom {
-  bottom: 0;
-}
-
+/* Positions top text inside the image */
 .top {
-  top: 0;
+  top: 5%;
+}
+
+/* Positions bottom text inside the image */
+.bottom {
+  bottom: 5%;
+}
+
+/* ============================= */
+/* Form Styling */
+/* ============================= */
+
+/* Form layout: Two input fields in the first row, button in the second row */
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+/* Input field styling */
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+  /* Indent text inside input field for readability */
+}
+
+/* Button styling */
+.form--button {
+  grid-column: 1 / -1;
+  /* Button spans across both columns */
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Hover effect for better user feedback */
+.form--button:hover {
+  opacity: 0.9;
 }
