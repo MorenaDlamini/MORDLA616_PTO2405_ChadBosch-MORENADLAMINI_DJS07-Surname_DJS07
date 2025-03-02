@@ -26,7 +26,7 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```sh
    git clone <repository-url>
-   cd meme-generator
+   cd MORDLA616_PTO2405_ChadBosch-MORENADLAMINI_DJS07-Surname_DJS07
    ```
 2. Install dependencies:
    ```sh
@@ -41,13 +41,13 @@ Ensure you have the following installed:
 ```
 /meme-generator
 │-- /src
-│   │-- /components    # Reusable UI components
-│   │-- /images        # Image and static assets
-│   │-- /styles        # CSS styles
-│   │-- App.js         # Main application entry point
-│   │-- index.js       # Renders App component
-│-- package.json       # Project dependencies and scripts
-│-- README.md          # Project Objective
+│   │-- /components        # Reusable UI components
+│   │-- /images            # Image and static assets
+│   │-- /styles            # CSS styles
+│   │-- App.js             # Main application entry point
+│   │-- index.js           # Renders App component
+│-- package.json           # Project dependencies and scripts
+│-- README.md              # Project Objective
 │-- MemeGenerator-Docs.md  # Project documentation
 ```
 
