@@ -39,7 +39,7 @@ Ensure you have the following installed:
 
 ## Folder Structure
 ```
-/meme-generator
+/MORDLA616_PTO2405_ChadBosch-MORENADLAMINI_DJS07-Surname_DJS07
 │-- /src
 │   │-- /components        # Reusable UI components
 │   │-- /images            # Image and static assets
